@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import Layout from '../pages/layout'
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
 				</div>
 			</div>
 		</div>
+		<Outlet />
 	</div>
   )
 }

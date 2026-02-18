@@ -2,9 +2,9 @@ import React from 'react'
 
 const Contacte = () => {
   return (
-	<div className='container'>
+	<div>
 		<div className='row'>
-			<div className='col-12 d-flex justify-content-center align-items-center'>
+			<div className='col-12 d-flex justify-content-center align-items-center flex-column'>
 				<h1>Contacte</h1>
 				<form>
 					<label for="name">Nombre:</label><br></br>
