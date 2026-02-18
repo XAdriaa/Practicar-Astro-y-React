@@ -1,15 +1,16 @@
 import React from 'react'
 
-const header = () => {
+const Header = () => {
   return (
 	<div className='container'>
 		<div className='row'>
-			<div className='col-12'>
-				<img src='/public/logo_provisional.png'></img>
+			<div className='col-12 d-flex justify-content-center align-items-center flex-column'>
+				<img src='/public/logo_provisional.png' width="100"></img>
+				<div className='d-flex gap-5'><p>Inici</p><p>Adopta</p><p>Adiestra</p><p>Contacta</p></div>
 			</div>
 		</div>
 	</div>
   )
 }
 
-export default header
+export default Header
