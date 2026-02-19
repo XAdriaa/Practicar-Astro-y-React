@@ -13,7 +13,17 @@ async function getAdoptados() {
 	}
 }
 
+// 	function filtrarAdoptados(adoptados) {
+// 		var fecha = new Date();
+// 		let nuevosAdoptados = [];
+// 		const adoptadoReciente = adoptados.map((animal) =>(
 
+// 			if( a < fecha){
+
+// 			}
+// 		))
+
+// }
 
 const HomeAdopciones = () => {
 	const [adoptados, setAdoptados] = useState([]);
@@ -23,7 +33,9 @@ const HomeAdopciones = () => {
 		const obtenerDatos = async () => {
 		const data = await getAdoptados();
 		setAdoptados(data);
-	};
+		filtrarAdoptados(data);
+		console.log(fecha);
+		};
 	 obtenerDatos();
 	}, []);
 
