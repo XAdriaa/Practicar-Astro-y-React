@@ -1,4 +1,5 @@
 import React from 'react'
+import HomeAdopciones from './homeAdopciones'
 
 const Home = () => {
   return (
@@ -17,21 +18,10 @@ const Home = () => {
 		</div>
 		<div className='row'>
 			<div className='col-12'>
-				<div className='d-flex justify-content-center flex-column'>
+				<div className='d-flex justify-content-center text-center flex-column'>
 					<h3>Gossos recentment adoptats</h3>
 					<div className='d-flex flex-row justify-content-between'>
-						<div className='card w-50'>
-							<img src='/public/boyero.jpg' className='img-fluid card-img-top'/>
-							<div>
-								<p></p>
-							</div>
-						</div>
-						<div className='card w-50'>
-							<img src='/public/Pastor-aleman.png' className='img-fluid card-img-top'/>
-						</div>
-						<div className='card w-50'>
-							<img src='/public/golden-retriever.webp' className='img-fluid card-img-top'/>
-						</div>
+						<HomeAdopciones />
 					</div>
 				</div>
 			</div>
