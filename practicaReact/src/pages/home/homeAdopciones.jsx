@@ -35,10 +35,10 @@ const HomeAdopciones = () => {
 	<div className='container'>
 		<div className="row">
 			<div className="col-12">
-				<div className="d-flex justify-content-between text-center flex-md-row flex-column justify-content-center align-items-center">
+				<div className="d-flex justify-content-between text-center flex-md-row flex-column contenedor-cartas-perros">
 					{/**Cartas de los aimales recientemente adoptados */}
 					{adoptados.map((animal) =>(
-						<div key={animal.id_animal} className="card w-50 mx-2 m-sm-1">
+						<div key={animal.id_animal} className="card w-50 mx-2 m-sm-1 carta-adoptats">
 							<img src={animal.img} className="card-img-top img-adoptados" alt={animal.nombre}/>
 							<div className="card-body d-flex flex-column">
 								<h3 className="card-title">{animal.nombre}</h3>

@@ -19,7 +19,7 @@ const Home = () => {
 		<div className='row'>
 			<div className='col-12'>
 				<div className='d-flex justify-content-center text-center flex-column'>
-					<h3>Gossos recentment adoptats</h3>
+					<h1 className='titul-row-2 my-4'>Gossos recentment adoptats</h1>
 					<div className='d-flex flex-row justify-content-between'>
 						<HomeAdopciones />
 					</div>
