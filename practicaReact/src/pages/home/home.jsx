@@ -7,7 +7,7 @@ const Home = () => {
 		<div className='row'>
 			<div className='col-12 d-flex justify-content-center text-center'>
 				<div className='card'>
-					<img src='/public/san-bernardo.jpg' className='img-fluid card-img'/>
+					<img src='/san-bernardo.jpg' className='img-fluid card-img'/>
 				<div className='card-img-overlay text-light'>
 					<h1 className=''>No compres una zaça,regala una vida</h1>
 					<h5 className=''>Mes de 150 gosos esperant la teua ajuda</h5>
