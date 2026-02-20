@@ -13,6 +13,9 @@ async function getAdoptados() {
 	}
 }
 
+
+//Esta funcio lo que fa es ordenar els animals adoptats y despres selecciona els
+//3 ultims i els mosra per pantalla
 function filtrarAdoptados(adoptados) {
 	return adoptados.sort((a, b) => new Date(b.fecha_adopcion) - new Date(a.fecha_adopcion)).slice(0, 3);
 }
