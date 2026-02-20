@@ -6,6 +6,7 @@ import Home from './pages/home/home'
 import Contacte from './pages/contacte'
 import Adiestra from './pages/adiestra'
 import Adopta from './pages/adopta'
+import NotFound from './componentes/404'
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
         <Route path='adopta' element={<Adopta />}></Route>
         <Route path='adiestra' element={<Adiestra />}></Route>
       </Route>
+      <Route path='*' element={<NotFound />}></Route>
     </Routes>
-    <Footer />
+
   </div>
   )
 }
