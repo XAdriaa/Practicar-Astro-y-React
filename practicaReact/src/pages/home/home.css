@@ -1,0 +1,46 @@
+.img-adoptados {
+	max-height: 300px;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/**Actualizador de tamaño de las fotos de los perros */
+@media (max-width: 1200px) {
+	.img-adoptados {
+		max-height: 250px;
+	}
+}
+
+@media (max-width: 992px) {
+	.img-adoptados {
+		max-height: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.img-adoptados {
+		max-height: 150px;
+	}
+}
+
+@media (max-width: 500px) {
+	.img-adoptados {
+		max-height: 100px;
+	}
+}
+
+@media (max-width: 361px) {
+	.img-adoptados {
+		max-height: 80px;
+	}
+}
+
+/**Actualizador de la posicion de las cartas de los perros*/
+@media (max-width: 768px) {
+	.contenedor-cartas-perros{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
