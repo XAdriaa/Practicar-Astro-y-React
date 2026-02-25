@@ -27,9 +27,9 @@ const Contacte = () => {
 				<h1>Contacte</h1>
 				<form ref={form} onSubmit={sendEmail}>
 					<label for="name">Nombre:</label><br></br>
-					<input type="text" name="user_name"></input><br></br>
+					<input type="text" name="name"></input><br></br>
 					<label for="email">Correo electrónico:</label><br></br>
-					<input type="email" name="user_email"></input><br></br>
+					<input type="email" name="email"></input><br></br>
 					<label for="message">Mensaje:</label><br></br>
 					<textarea name="message"></textarea><br></br>
 					<input type="submit" value="Send"></input>
