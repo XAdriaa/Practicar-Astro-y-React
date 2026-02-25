@@ -1,6 +1,7 @@
 import React from 'react'
 import HomeAdopciones from './homeAdopciones'
 import HomePerqueAdoptar from './homePerqueAdoptar'
+import ComAdoptra from './comAdoptra'
 
 const Home = () => {
   return (
@@ -31,6 +32,12 @@ const Home = () => {
 			<div className='col-12 text-center'>
 				<h1>¿Perque adoptar?</h1>
 				<HomePerqueAdoptar />
+			</div>
+		</div>
+		<div className='row'>
+			<div className='col-12 text-center'>
+				<h1>¿Com adoptar?</h1>
+				<ComAdoptra />
 			</div>
 		</div>
 	</div>
