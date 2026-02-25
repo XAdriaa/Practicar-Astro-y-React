@@ -128,7 +128,6 @@ Arxiu home.jsx
 
 
 
-
 /*****************************************************************
 ------------------------------------------------------------------
 Arxiu homePerqueAdoptar.jsx
@@ -136,13 +135,24 @@ Arxiu homePerqueAdoptar.jsx
 *****************************************************************/
 
 .img-card-perque {
-	max-width: 300px;
-	width: 100%;
-	height: auto;
+    /* Esto asegura que todas las imágenes midan lo mismo */
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
-.tamaño-card-perque{
-	max-width: 300px;
-	width: 100%;
+.tamaño-card-perque {
+    max-width: 300px; /* Limita el ancho máximo */
+    width: 100%;
+    /* Quitamos el estilo en línea de 18rem y lo controlamos desde aquí */
 }
+
+/* Opcional: Para que en móviles las cards no se vean gigantes */
+@media (max-width: 576px) {
+    .img-card-perque {
+        height: 150px;
+    }
+}
+
+/* ... (Tus otros estilos de homeAdopciones y home.jsx se mantienen igual) ... */
 

@@ -30,13 +30,13 @@ const Home = () => {
 		</div>
 		<div className='row'>
 			<div className='col-12 text-center'>
-				<h1>¿Perque adoptar?</h1>
+				<h1 className='my-4'>¿Perque adoptar?</h1>
 				<HomePerqueAdoptar />
 			</div>
 		</div>
 		<div className='row'>
 			<div className='col-12 text-center'>
-				<h1>¿Com adoptar?</h1>
+				<h1 className='my-4'>¿Com adoptar?</h1>
 				<ComAdoptra />
 			</div>
 		</div>
