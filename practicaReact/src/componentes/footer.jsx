@@ -8,7 +8,7 @@ const Footer = () => {
 		<div className='container'>
 			<div className='row'>
 				<div className='col-12 d-flex flex-column flex-md-row justify-content-between align-items-center'>
-					<img src='/public/logo_provisional-sinfondo.png'/>
+					<img src='./public/logo_provisional-sinfondo.png'/>
 					<div className='d-flex gap-4 flex-column flex-md-row justify-content-center align-items-center'>
 						<div>
 							<ul className='list-unstyled text-md-end text-center'>
