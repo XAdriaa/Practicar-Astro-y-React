@@ -71,7 +71,7 @@ const HomeAdopciones = () => {
 								<div className={`carousel-item${idx === 0 ? " active" : ""}`} key={animal.id_animal}>
 									<img src={animal.img} className="d-block w-100" alt="Animal adoptat recient ment" />
 									<div className="carousel-caption d-none d-md-block">
-										<h6>{animal.nombre}</h6>
+										<p className="text-dark">{animal.nombre}</p>
 									</div>
 								</div>
 							))}

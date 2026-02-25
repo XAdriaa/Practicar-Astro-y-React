@@ -29,17 +29,6 @@ Arxiu homeAdopciones.jsx
 	}
 }
 
-@media (max-width: 500px) {
-	.img-adoptados {
-		max-height: 100px;
-	}
-}
-
-@media (max-width: 361px) {
-	.img-adoptados {
-		max-height: 80px;
-	}
-}
 
 /**Actualizador de la posicion de las cartas de los perros*/
 @media (max-width: 768px) {
@@ -145,3 +134,15 @@ Arxiu home.jsx
 Arxiu homePerqueAdoptar.jsx
 ------------------------------------------------------------------
 *****************************************************************/
+
+.img-card-perque {
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+}
+
+.tamaño-card-perque{
+	max-width: 300px;
+	width: 100%;
+}
+
