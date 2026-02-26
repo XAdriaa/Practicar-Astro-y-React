@@ -38,7 +38,7 @@ const HomeAdopciones = () => {
 		<div className='container'>
 			<div className="row">
 				<div className="col-12">
-					{/* Cartas solo visibles en desktop (md y superior) */}
+					{/* Cartas solo visibles en desktop */}
 					<div className="d-none d-md-flex justify-content-between text-center flex-md-row flex-column contenedor-cartas-perros">
 						{adoptados.map((animal) =>(
 							<div key={animal.id_animal} className="card w-50 mx-2 m-sm-1 carta-adoptats">

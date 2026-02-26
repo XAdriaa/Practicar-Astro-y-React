@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react' // 1. Importar el componente
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Header from './componentes/header'
 import Footer from './componentes/footer'
 import Home from './pages/home/home'
@@ -24,6 +25,7 @@ const App = () => {
 
       {/* 2. Añadir el componente aquí */}
       <Analytics />
+      <SpeedInsights/>
     </div>
   )
 }

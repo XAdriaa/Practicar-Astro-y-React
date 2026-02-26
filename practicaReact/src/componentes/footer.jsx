@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { Whatsapp, Instagram, TwitterX, Facebook } from 'react-bootstrap-icons';
 
 
@@ -14,9 +14,9 @@ const Footer = () => {
 							<ul className='list-unstyled text-md-end text-center'>
 								<li><p>Horari de visita de 09:00 a 19:00</p></li>
 								<li><p>Donacions: IBAN ES85 4502 6595 4152 4899</p></li>
-								<li><p>Avis legal</p></li>
-								<li><p>Política de privacitat</p></li>
-								<li><p>Cookies</p></li>
+								<li><Link><p>Avís legal</p></Link></li>
+								<li><Link to="/PoliticaPrivacitat/"><p>Política de privacitat</p></Link></li>
+								<li><Link><p>Cookies</p></Link></li>
 							</ul>
 						</div>
 						<div>
