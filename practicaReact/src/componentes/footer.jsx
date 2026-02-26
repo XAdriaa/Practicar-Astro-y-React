@@ -14,9 +14,9 @@ const Footer = () => {
 							<ul className='list-unstyled text-md-end text-center'>
 								<li><p>Horari de visita de 09:00 a 19:00</p></li>
 								<li><p>Donacions: IBAN ES85 4502 6595 4152 4899</p></li>
-								<li><Link><p>Avís legal</p></Link></li>
-								<li><Link to="/PoliticaPrivacitat/"><p>Política de privacitat</p></Link></li>
-								<li><Link><p>Cookies</p></Link></li>
+								<li><Link to="AvisLegal" className='text-decoration-none text-dark'><p>Avís legal</p></Link></li>
+								<li><Link to="/PoliticaPrivacitat/" className='text-decoration-none text-dark'><p>Política de privacitat</p></Link></li>
+								<li><Link to="/Cookies" className='text-decoration-none text-dark'><p>Cookies</p></Link></li>
 							</ul>
 						</div>
 						<div>
