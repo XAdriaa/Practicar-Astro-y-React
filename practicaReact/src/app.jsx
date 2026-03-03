@@ -5,7 +5,7 @@ import Header from './componentes/header'
 import Footer from './componentes/footer'
 import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
-import Adiestra from './pages/adiestra'
+import Train from './pages/Train/Train'
 import Adopt from './pages/Adopt/Adopt'
 import NotFound from './componentes/404'
 import Politic from './pages/Politic/Politic'
@@ -20,7 +20,7 @@ const App = () => {
           <Route index element={<Home />}></Route>
           <Route path='contacte' element={<Contact />}></Route>
           <Route path='adopta' element={<Adopt />}></Route>
-          <Route path='adiestra' element={<Adiestra />}></Route>
+          <Route path='Cursos' element={<Train />}></Route>
           <Route path='PoliticaPrivacitat' element={<Politic />}></Route>
           <Route path='Cookies' element={<Cookies />}></Route>
           <Route path='LegalWarning' element={<LegalWarning />}></Route>
