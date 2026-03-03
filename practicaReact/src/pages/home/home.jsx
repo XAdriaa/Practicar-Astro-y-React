@@ -1,7 +1,7 @@
 import React from 'react'
-import HomeAdopciones from './homeAdopciones'
-import HomePerqueAdoptar from './homePerqueAdoptar'
-import ComAdoptra from './comAdoptra'
+import HomeAdopts from './HomeAdopts'
+import HomeWhyAdopt from './HomeWhyAdopt'
+import KnowAdopt from './KnowAdopt'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
 				<div className='d-flex justify-content-center text-center flex-column'>
 					<h1 className='titul-row-2 my-4'>Gossos recentment adoptats</h1>
 					<div className='d-flex flex-row justify-content-between'>
-						<HomeAdopciones />
+						<HomeAdopts />
 					</div>
 				</div>
 			</div>
@@ -31,13 +31,13 @@ const Home = () => {
 		<div className='row'>
 			<div className='col-12 text-center'>
 				<h1 className='my-4'>Per què adoptar?</h1>
-				<HomePerqueAdoptar />
+				<HomeWhyAdopt />
 			</div>
 		</div>
 		<div className='row'>
 			<div className='col-12 text-center'>
 				<h1 className='my-4'>Com adoptar?</h1>
-				<ComAdoptra />
+				<KnowAdopt />
 			</div>
 		</div>
 	</div>

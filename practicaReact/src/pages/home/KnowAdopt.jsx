@@ -1,7 +1,7 @@
 import React from 'react'
 import { House, ArrowRepeat, Clipboard, ClipboardCheck, PatchCheck } from 'react-bootstrap-icons';
 
-const ComAdoptra = () => {
+const HomeWhyAdopt = () => {
   return (
     <div className='d-flex justify-content-center flex-wrap'>
         {/* Paso 1 */}
@@ -47,4 +47,4 @@ const ComAdoptra = () => {
   )
 }
 
-export default ComAdoptra
+export default HomeWhyAdopt

@@ -20,7 +20,7 @@ function filtrarAdoptados(adoptados) {
 	return adoptados.sort((a, b) => new Date(b.fecha_adopcion) - new Date(a.fecha_adopcion)).slice(0, 3);
 }
 
-const HomeAdopciones = () => {
+const HomeAdopts = () => {
 	const [adoptados, setAdoptados] = useState([]);
 
 
@@ -93,4 +93,4 @@ const HomeAdopciones = () => {
 
 
 
-export default HomeAdopciones
+export default HomeAdopts

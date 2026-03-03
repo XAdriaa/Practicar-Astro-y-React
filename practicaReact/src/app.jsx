@@ -3,14 +3,14 @@ import { Analytics } from '@vercel/analytics/react' // 1. Importar el componente
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Header from './componentes/header'
 import Footer from './componentes/footer'
-import Home from './pages/home/home'
-import Contacte from './pages/contacte/contacte'
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
 import Adiestra from './pages/adiestra'
-import Adopta from './pages/Adopta/adopta'
+import Adopt from './pages/Adopt/Adopt'
 import NotFound from './componentes/404'
-import PoliticaPrivacitat from './pages/PoliticaPrivacitat/PoliticaPrivacitat'
+import Politic from './pages/Politic/Politic'
 import Cookies  from './pages/Cookies/Cookies'
-import AvisLegal from './pages/AvisLegal/AvisLegal'
+import LegalWarning from './pages/LegalWarning/LegalWarning'
 
 const App = () => {
   return (
@@ -18,12 +18,12 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Header />}>
           <Route index element={<Home />}></Route>
-          <Route path='contacte' element={<Contacte />}></Route>
-          <Route path='adopta' element={<Adopta />}></Route>
+          <Route path='contacte' element={<Contact />}></Route>
+          <Route path='adopta' element={<Adopt />}></Route>
           <Route path='adiestra' element={<Adiestra />}></Route>
-          <Route path='PoliticaPrivacitat' element={<PoliticaPrivacitat />}></Route>
+          <Route path='PoliticaPrivacitat' element={<Politic />}></Route>
           <Route path='Cookies' element={<Cookies />}></Route>
-          <Route path='AvisLegal' element={<AvisLegal />}></Route>
+          <Route path='LegalWarning' element={<LegalWarning />}></Route>
         </Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>

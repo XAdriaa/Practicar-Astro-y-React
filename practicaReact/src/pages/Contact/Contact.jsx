@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contacte = () => {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -68,4 +68,4 @@ const Contacte = () => {
   );
 }
 
-export default Contacte;
+export default Contact;

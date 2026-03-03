@@ -11,7 +11,7 @@ function gosso() {
 	}
 }
 
-const AdoptarFiltro = () => {
+const AdoptFilter = () => {
 
 	useEffect(() => {
 		gosso();
@@ -45,4 +45,4 @@ const AdoptarFiltro = () => {
 		</div>
     )
 }
-export default AdoptarFiltro
+export default AdoptFilter

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HomePerqueAdoptar = () => {
+const HomeWhyAdopt = () => {
   return (
     <div className='d-flex justify-content-center flex-wrap'>
 
@@ -36,4 +36,4 @@ const HomePerqueAdoptar = () => {
   )
 }
 
-export default HomePerqueAdoptar
+export default HomeWhyAdopt
