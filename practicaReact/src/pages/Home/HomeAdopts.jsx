@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { FetchAdoptsHome } from "../../server/FetchAdoptsHome"
+import  FetchAdoptsHome  from "../../server/FetchAdoptsHome"
 
-//const URL = "https://express-js-on-vercel-azure-zeta-32.vercel.app/api/";
-
+//Si sale fallo de exported named probar a quitar los parentesis "{}" de el import
 
 
 //Esta funcio lo que fa es ordenar els animals adoptats y despres selecciona els
