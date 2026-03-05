@@ -1,17 +1,8 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { FetchAdoptsHome } from "../../server/FetchAdoptsHome"
 
-const URL = "https://express-js-on-vercel-azure-zeta-32.vercel.app/api/";
+//const URL = "https://express-js-on-vercel-azure-zeta-32.vercel.app/api/";
 
-async function getAdoptados() {
-	try {
-		const respuesta = await axios.get("https://express-js-on-vercel-azure-zeta-32.vercel.app/api/animales/adoptados");
-		return respuesta.data;
-	}catch(error){
-		console.log(error);
-		return [];
-	}
-}
 
 
 //Esta funcio lo que fa es ordenar els animals adoptats y despres selecciona els
@@ -25,13 +16,18 @@ const HomeAdopts = () => {
 
 
 	useEffect(() => {
-		const obtenerDatos = async () => {
-		const data = await getAdoptados();
-		const filtrados = filtrarAdoptados(data);
-		setAdoptados(filtrados);
-		};
-	 obtenerDatos();
-	}, []);
+		const fetchDada = async () => {
+			try {
+				const data = await FetchAdoptsHome();
+				const filtrado = filtrarAdoptados(data);
+				setAdoptados(filtrado);
+			} catch (error){
+				console.error("Error en la llamada a la funcion de la funcion del fetch de los datos de los adoptados", error);
+			}
+		}
+		fetchDada();
+
+	},[])
 
 
 	return (
