@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react' // 1. Importar el componente
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Header from './componentes/header'
 import Footer from './componentes/footer'
-import Home from './Home/Home'
+//import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
 import Train from './pages/Train/Train'
 import Adopt from './pages/Adopt/Adopt'
