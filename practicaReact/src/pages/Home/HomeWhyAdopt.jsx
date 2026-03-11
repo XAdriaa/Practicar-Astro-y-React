@@ -12,13 +12,6 @@ const HomeWhyAdopt = () => {
         </div>
 
         <div className='card mx-3 mb-3 tamaño-card-perque'>
-            <img src='/perros-niños.webp' className='card-img-top img-card-perque' alt="Niños con perros"/>
-            <div className='card-body text-center'>
-                <p className='fs-5'>Ajuden als xiquets amb el desenvolupament</p>
-            </div>
-        </div>
-
-        <div className='card mx-3 mb-3 tamaño-card-perque'>
             <img src='/perrosMestizo.jpg' className='card-img-top img-card-perque' alt="Perro mestizo"/>
             <div className='card-body text-center'>
                 <p className='fs-5'>Donar una nova oportunitat</p>

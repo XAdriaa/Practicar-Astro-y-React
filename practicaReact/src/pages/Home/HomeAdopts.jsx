@@ -32,9 +32,9 @@ const HomeAdopts = () => {
 	return (
 			<div className="row">
 					{/* Cartas solo visibles en desktop */}
-					<div className="d-none d-md-flex justify-content-center text-center contenedor-cartas-perros" style={{overflowX: 'hidden'}}>
+					<div className="d-none d-md-flex justify-content-between text-center contenedor-cartas-perros" style={{overflowX: 'hidden'}}>
 						{adoptados.map((animal) =>(
-							<div key={animal.id_animal} className="col-4 mb-3">
+							<div key={animal.id_animal} className="col-4 mb-3 card-adoptats">
 								<div className="card carta-adoptats h-100">
 									<img src={animal.img} className="card-img-top img-adoptados" alt={animal.nombre}/>
 									<div className="card-body d-flex flex-column">
@@ -64,7 +64,7 @@ const HomeAdopts = () => {
 						<div className="carousel-inner">
 							{adoptados.map((animal, idx) => (
 								<div className={`carousel-item${idx === 0 ? " active" : ""}`} key={animal.id_animal}>
-									<img src={animal.img} className="d-block w-100" alt="Animal adoptat recient ment" />
+									<img src={animal.img} className="d-block w-100 object-fit-cover img-carrusel" alt="Animal adoptat recient ment" />
 									<div className="carousel-caption d-none d-md-block">
 										<p className="text-dark">{animal.nombre}</p>
 									</div>

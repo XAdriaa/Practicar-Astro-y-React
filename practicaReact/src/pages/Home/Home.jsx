@@ -9,17 +9,17 @@ const Home = () => {
 		<HeroIni />
 		{/*Seccio de adoptats recentment */}
 		<div className='row'>
-			<h1 className="text-center">Adoptats recentment</h1>
+			<h1 className="text-center mt-3">Adoptats recentment</h1>
 		</div>
 		<HomeAdopts />
 		{/*Seccio de perque adoptar */}
 		<div className='row'>
-			<h1 className="text-center">Per què adoptar?</h1>
+			<h1 className="text-center mt-3">Per què adoptar?</h1>
 		</div>
 		<HomeWhyAdopt />
 		{/*Seccio de coneix com adoptar */}
 		<div className='row'>
-			<h1 className="text-center">Pasos per adoptar</h1>
+			<h1 className="text-center mt-3">Pasos per adoptar</h1>
 		</div>
 		<KnowAdopt />
 
