@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import  { FetchAdoptsHome }  from "../../server/RequestAPI";
-
 //Si sale fallo de exported named probar a quitar los parentesis "{}" de el import
 
 
@@ -33,7 +32,7 @@ const HomeAdopts = () => {
 	return (
 			<div className="row">
 					{/* Cartas solo visibles en desktop */}
-					<div className="d-none d-md-flex row justify-content-center text-center contenedor-cartas-perros" style={{overflowX: 'hidden'}}>
+					<div className="d-none d-md-flex justify-content-center text-center contenedor-cartas-perros" style={{overflowX: 'hidden'}}>
 						{adoptados.map((animal) =>(
 							<div key={animal.id_animal} className="col-4 mb-3">
 								<div className="card carta-adoptats h-100">
