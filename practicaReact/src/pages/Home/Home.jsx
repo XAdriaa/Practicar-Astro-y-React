@@ -1,4 +1,3 @@
-import React from 'react'
 import HomeAdopts from './HomeAdopts'
 import HomeWhyAdopt from './HomeWhyAdopt'
 import KnowAdopt from './KnowAdopt'
@@ -18,28 +17,22 @@ const Home = () => {
 				</div>
 			</div>
 		</div>
+		{/*Seccio de adoptats recentment */}
 		<div className='row'>
-			<div className='col-12'>
-				<div className='d-flex justify-content-center text-center flex-column'>
-					<h1 className='titul-row-2 my-4'>Gossos recentment adoptats</h1>
-					<div className='d-flex flex-row justify-content-between'>
-						<HomeAdopts />
-					</div>
-				</div>
-			</div>
+			<h1 className="text-center">Adoptats recentment</h1>
 		</div>
+		<HomeAdopts />
+		{/*Seccio de perque adoptar */}
 		<div className='row'>
-			<div className='col-12 text-center'>
-				<h1 className='my-4'>Per què adoptar?</h1>
-				<HomeWhyAdopt />
-			</div>
+			<h1 className="text-center">Per què adoptar?</h1>
 		</div>
+		<HomeWhyAdopt />
+		{/*Seccio de coneix com adoptar */}
 		<div className='row'>
-			<div className='col-12 text-center'>
-				<h1 className='my-4'>Com adoptar?</h1>
-				<KnowAdopt />
-			</div>
+			<h1 className="text-center">Pasos per adoptar</h1>
 		</div>
+		<KnowAdopt />
+
 	</div>
   )
 }

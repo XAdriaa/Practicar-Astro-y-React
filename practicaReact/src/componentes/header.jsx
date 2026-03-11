@@ -4,17 +4,17 @@ import Layout from '../pages/layout'
 
 const Header = () => {
   return (
-	<div className='container-fluid m-0 p-0'>
-		<div className='row'>
-			<div className='col-12 d-flex justify-content-center align-items-center flex-column'>
-				<img src='/logo_provisional.png' width="100"></img>
-				<div className='d-flex gap-5'>
-					<Layout />
-				</div>
+    <div className='container-fluid m-0 p-0'>
+      <div className='row m-0 p-0'>
+		<div className='col-12  d-flex flex-column align-items-center'>
+			<img src='/Logo_adris.svg' alt='Logo empresa' width="100" />
+			<div className='d-flex gap-5'>
+			<Layout />
 			</div>
 		</div>
-		<Outlet />
-	</div>
+      </div>
+      <Outlet />
+    </div>
   )
 }
 

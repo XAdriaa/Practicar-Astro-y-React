@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeWhyAdopt = () => {
   return (
-    <div className='d-flex justify-content-center flex-wrap'>
+    <div className='row d-flex justify-content-center flex-wrap'>
 
         <div className='card mx-3 mb-3 tamaño-card-perque'>
             <img src='/agradablesFoto.webp' className='card-img-top img-card-perque' alt="Perros agradecidos"/>

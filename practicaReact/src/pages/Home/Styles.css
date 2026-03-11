@@ -31,12 +31,12 @@ Arxiu homeAdopciones.jsx
 
 
 /**Actualizador de la posicion de las cartas de los perros*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.contenedor-cartas-perros{
 		align-items: center;
 		justify-content: center;
 	}
-}
+} */
 
 /**Actualizar contenido banner */
 @media (max-width: 768px) {

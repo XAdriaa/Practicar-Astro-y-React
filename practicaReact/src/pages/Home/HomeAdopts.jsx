@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import  FetchAdoptsHome  from "../../server/FetchAdoptsHome"
+import  { FetchAdoptsHome }  from "../../server/RequestAPI";
 
 //Si sale fallo de exported named probar a quitar los parentesis "{}" de el import
 
@@ -18,6 +18,7 @@ const HomeAdopts = () => {
 		const fetchDada = async () => {
 			try {
 				const data = await FetchAdoptsHome();
+				console.log("Datos que devuelve la API de los perros que estan adoptados",data);
 				const filtrado = filtrarAdoptados(data);
 				setAdoptados(filtrado);
 			} catch (error){
@@ -30,18 +31,18 @@ const HomeAdopts = () => {
 
 
 	return (
-		<div className='container'>
 			<div className="row">
-				<div className="col-12">
 					{/* Cartas solo visibles en desktop */}
-					<div className="d-none d-md-flex justify-content-between text-center flex-md-row flex-column contenedor-cartas-perros">
+					<div className="d-none d-md-flex row justify-content-center text-center contenedor-cartas-perros" style={{overflowX: 'hidden'}}>
 						{adoptados.map((animal) =>(
-							<div key={animal.id_animal} className="card w-50 mx-2 m-sm-1 carta-adoptats">
-								<img src={animal.img} className="card-img-top img-adoptados" alt={animal.nombre}/>
-								<div className="card-body d-flex flex-column">
-									<h3 className="card-title">{animal.nombre}</h3>
-									<p className="card-text">{animal.raza}</p>
-									<p className="card-text">{animal.descripcion}</p>
+							<div key={animal.id_animal} className="col-4 mb-3">
+								<div className="card carta-adoptats h-100">
+									<img src={animal.img} className="card-img-top img-adoptados" alt={animal.nombre}/>
+									<div className="card-body d-flex flex-column">
+										<h3 className="card-title">{animal.nombre}</h3>
+										<p className="card-text">{animal.raza}</p>
+										<p className="card-text">{animal.descripcion}</p>
+									</div>
 								</div>
 							</div>
 						))}
@@ -80,9 +81,7 @@ const HomeAdopts = () => {
 							<span className="visually-hidden">Next</span>
 						</button>
 					</div>
-				</div>
 			</div>
-		</div>
 	)
 }
 

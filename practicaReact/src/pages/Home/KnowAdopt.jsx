@@ -3,7 +3,7 @@ import { House, ArrowRepeat, Clipboard, ClipboardCheck, PatchCheck } from 'react
 
 const HomeWhyAdopt = () => {
   return (
-    <div className='d-flex justify-content-center flex-wrap'>
+    <div className='row d-flex justify-content-center flex-wrap'>
         {/* Paso 1 */}
         <div className="col-md-2 col-sm-4 col-5 mb-3 mx-3">
           <div className="p-3 border rounded bg-light h-100 carta-adoptar">
