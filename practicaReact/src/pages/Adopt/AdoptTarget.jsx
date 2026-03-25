@@ -17,16 +17,16 @@ const AdoptTarget = ({ data }) => {
 								<img className="card-img-top" src={item.img} alt="Imagen no disponible" height="200px"></img>
 								<p className="card-title">{item.nombre}</p>
 							</div>
-							<div className="card-body d-flex gap-3 mt-0 pt-0">
-							<a><FilePlus /></a>
-							<a><Heart /></a>
+							<div className="card-body d-flex mt-0 pt-0 justify-content-end">
+							<button className="btn btn-outline-link text-primary"><FilePlus /></button>
+							<button className="btn btn-outline-link text-danger"><Heart /></button>
 							</div>
 						</div>
 					</div>
 				))}
 			</div>
 		</div>
-	</div>
+	</div> 
   )
 }
 
