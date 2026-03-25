@@ -75,31 +75,43 @@ const AdoptFilter = () => {
     return (
 		<div className="container">
 			<div className="row">
-				<div className="col-12">
-					<select name="sex" value={filtre.sex} onChange={handleFiltre}>
-						<option value = "">Tots</option>
-						<option value = "m">Mascle</option>
-						<option value = "f">Hembra</option>
-					</select>
-					<select name = "race" value={filtre.race} onChange={handleFiltre}>
-						<option value="">Totes</option>
-						{race.map(r => (
-							<option key = {r.id_raza} value = {r.id_raza}>{r.nombre}</option>
-						))}
-					</select>
-					<select name="age" value={filtre.age} onChange={handleFiltre}>
+				<div className="col-12 d-flex">
+					<div className="d-flex flex-column m-3">
+						<label>Sexe:</label>
+						<select name="sex" value={filtre.sex} onChange={handleFiltre} className="form-select">
+							<option value = "">Tots</option>
+							<option value = "m">Mascle</option>
+							<option value = "f">Hembra</option>
+						</select>
+					</div>
+					<div className="d-flex flex-column m-3">
+						<label>Raça:</label>
+						<select name = "race" value={filtre.race} onChange={handleFiltre} className="form-select">
+							<option value="">Totes</option>
+							{race.map(r => (
+								<option key = {r.id_raza} value = {r.id_raza}>{r.nombre}</option>
+							))}
+						</select>
+					</div>
+					<div className="d-flex flex-column m-3">
+					<label>Edad:</label>
+					<select name="age" value={filtre.age} onChange={handleFiltre} className="form-select">
 						<option value="">Totes</option>
 						<option value="cachorro">Cadell</option>
 						<option value="junior">Junior</option>
 						<option value="adult">Adult</option>
 						<option value="senior">Senior</option>
 					</select>
-					<select name="size" value={filtre.size} onChange={handleFiltre}>
-						<option value="">Totes</option>
-						{size.map(s => (
-							<option key={s.id_tamano} value={s.id_tamano}>{s.nombre}</option>
-						))}
-					</select>
+					</div>
+					<div className="d-flex flex-column m-3">
+						<lable>Tamany:</lable>
+						<select name="size" value={filtre.size} onChange={handleFiltre} className="form-select">
+							<option value="">Totes</option>
+							{size.map(s => (
+								<option key={s.id_tamano} value={s.id_tamano}>{s.nombre}</option>
+							))}
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
