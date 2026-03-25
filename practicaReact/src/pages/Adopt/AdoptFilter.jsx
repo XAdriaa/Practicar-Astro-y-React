@@ -4,7 +4,7 @@ import { FetchSize } from "../../server/RequestAPI";
 import { FetchFiltreAnimals } from "../../server/RequestAPI";
 
 
-const AdoptFilter = () => {
+const AdoptFilter = ({ setData }) => {
 	const [filtre, setFiltre] = useState({ sex: '', age: '', race: '', size: '' });
 	const [race, setRace] = useState([])
 	const [size, setSize] = useState([])
@@ -65,6 +65,8 @@ const AdoptFilter = () => {
 			}
 			const data = await FetchFiltreAnimals(params);
 			setAnimales(data);
+			setData(data); // Se actualizan los datos de los animales filtrados para que asi se muestre actualizado
+			console.log(data);
 		}
 		fetchAnimal();
 	}, [filtre]);
