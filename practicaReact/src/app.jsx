@@ -11,11 +11,13 @@ import NotFound from './componentes/404'
 import Politic from './pages/Politic/Politic'
 import Cookies  from './pages/Cookies/Cookies'
 import LegalWarning from './pages/LegalWarning/LegalWarning'
+import Login from './backoffice/pages/Login/Login'
 
 const App = () => {
   return (
     <div>
       <Routes>
+        /**Estas son la sruta de la parte del cliente*/
         <Route path='/' element={<Header />}>
           <Route index element={<Home />}></Route>
           <Route path='contacte' element={<Contact />}></Route>
@@ -26,7 +28,11 @@ const App = () => {
           <Route path='LegalWarning' element={<LegalWarning />}></Route>
         </Route>
         <Route path='*' element={<NotFound />}></Route>
-        
+
+        /**Rutas por parte de los trabajadores la parte del backoffice */
+        <Route path='Admin' element={<Login />}>
+
+        </Route>
       </Routes>
       <Footer />
 
