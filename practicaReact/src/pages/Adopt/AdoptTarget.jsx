@@ -7,14 +7,14 @@ const AdoptTarget = ({ data }) => {
 
 
   return (
-	<div className="container">
+
 		<div className="row">
 			<div className="col-12 d-flex flex-wrap">
 				{data.map((item) => (
 					<div key={item.id} className="m-2 d-flex flex-wrap">
-						<div className="card">
+						<div className="card card-adopt">
 							<div className="card-body mb-0 pb-0">
-								<img className="card-img-top" src={item.img} alt="Imagen no disponible" height="200px"></img>
+								<img className="card-img-top object-fit-cover" src={item.img} alt="Imagen no disponible" height="200px"></img>
 								<p className="card-title">{item.nombre}</p>
 							</div>
 							<div className="card-body d-flex mt-0 pt-0 justify-content-end">
@@ -26,7 +26,7 @@ const AdoptTarget = ({ data }) => {
 				))}
 			</div>
 		</div>
-	</div> 
+
   )
 }
 

@@ -14,7 +14,7 @@ const [data, setData] = useState([]);
 				<div className='bg-primary'>
 					<AdoptarFiltro setData={setData} />
 				</div>
-				<div className=''>
+				<div className='container-fluid'>
 					<AdoptTarget data={data} />
 				</div>
 			</div>
