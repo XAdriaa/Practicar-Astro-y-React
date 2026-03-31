@@ -26,10 +26,11 @@ const App = () => {
           <Route path='LegalWarning' element={<LegalWarning />}></Route>
         </Route>
         <Route path='*' element={<NotFound />}></Route>
+        
       </Routes>
       <Footer />
 
-      {/* 2. Añadir el componente aquí */}
+      {/*Analiticas de vercel */}
       <Analytics />
       <SpeedInsights/>
     </div>
