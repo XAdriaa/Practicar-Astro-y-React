@@ -1,7 +1,7 @@
 import axios from "axios";
 const url = import.meta.env.VITE_API_URL;
 
-
+//Animales
 export const FetchAdoptsHome = async () => {
 
 		try {
@@ -38,4 +38,3 @@ export const FetchFiltreAnimals = async (params) => {
 		console.log("Error al intentar hacer la peticion de la API del filtrado de los animales", error);
 	}
 }
-

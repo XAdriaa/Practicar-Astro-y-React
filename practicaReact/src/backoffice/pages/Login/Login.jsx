@@ -1,8 +1,9 @@
 import React from "react";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
+import { PostDataUsers } from "../../../server/RequestAPIUsers";
 
-const Login = () => {
+const Login = ({alEnviar}) => {
 	//Validaciones de YUP
 	const validationSchema = Yup.object({
 		email: Yup.string().required("Obligatory"),
@@ -11,13 +12,17 @@ const Login = () => {
 
 	const formik = useFormik({
 		initialValues:{
-			email:"",
+			correo_electronico:"",
 			password:"",
 		},
 		validationSchema,
-		onSubmit: (values) => {
-			console.log("Los datos enviados por el formulario de inicio de sesion son", values)
+		onSubmit: (values, {setSubmitting, resetForm}) => {
+			alEnviar(values);
+
+			setSubmitting(false);
+			resetForm();
 		}
+
 	});
 
   return (
@@ -29,8 +34,8 @@ const Login = () => {
 					<label>Correu Electronic</label>
 					<input
 					type='email'
-					name='email'
-					id="email"
+					name='correo_electronico'
+					id="correo_electronico"
 					placeholder='Correu Electronic'
 					className='form-control mb-3'
 					value={formik.values.email}
