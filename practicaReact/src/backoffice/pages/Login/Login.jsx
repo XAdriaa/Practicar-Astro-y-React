@@ -6,7 +6,7 @@ import { PostDataUsers } from "../../../server/RequestAPIUsers";
 const Login = ({alEnviar}) => {
 	//Validaciones de YUP
 	const validationSchema = Yup.object({
-		email: Yup.string().required("Obligatory"),
+		correo_electronico: Yup.string().required("Obligatory"),
 		password: Yup.string().required("Obligatory")
 	});
 
@@ -38,7 +38,7 @@ const Login = ({alEnviar}) => {
 					id="correo_electronico"
 					placeholder='Correu Electronic'
 					className='form-control mb-3'
-					value={formik.values.email}
+					value={formik.values.correo_electronico}
 					onChange={formik.handleChange}
 					onBlur={formik.handleBlur}
 					/>
