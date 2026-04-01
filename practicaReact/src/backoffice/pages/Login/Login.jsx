@@ -2,6 +2,7 @@ import React from "react";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { PostDataUsers } from "../../../server/RequestAPIUsers";
+import { useEffect, useState } from "react";
 
 const Login = ({alEnviar}) => {
 	//Validaciones de YUP
@@ -24,6 +25,8 @@ const Login = ({alEnviar}) => {
 		}
 
 	});
+
+	
 
   return (
 	<div className='container'>

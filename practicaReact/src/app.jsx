@@ -12,6 +12,7 @@ import Politic from './pages/Politic/Politic'
 import Cookies  from './pages/Cookies/Cookies'
 import LegalWarning from './pages/LegalWarning/LegalWarning'
 import Login from './backoffice/pages/Login/Login'
+import User from './backoffice/pages/Users/User'
 import { PostDataUsers } from './server/RequestAPIUsers'
 
 const App = () => {
@@ -30,10 +31,10 @@ const App = () => {
         </Route>
         <Route path='*' element={<NotFound />}></Route>
 
-        /**Rutas por parte de los trabajadores la parte del backoffice */
-        <Route path='Admin' element={<Login alEnviar={PostDataUsers}/>}>
-
-        </Route>
+        /**Ruta de login para trabajadores */
+        <Route path='Admin' element={<Login alEnviar={PostDataUsers}/>}></Route>
+        /**Ruta de usuarios para trabajadores */
+        <Route path='Back/User' element={<User/>}></Route>
       </Routes>
       <Footer />
 

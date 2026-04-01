@@ -4,7 +4,9 @@ import Login from "../backoffice/pages/Login/Login";
 
 export const PostDataUsers = async (data) => {
 	try {
-		const res = await axios.post(`${url}/auth/login`, data);
+		const res = await axios.post(`${url}/auth/login`, data,{
+		withCredentials:true
+		});
 		console.log(res);
 		console.log("Token recibido de forma correcta", res.data.token);
 		return res.data;
