@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { PostDataUsers } from "../../../server/RequestAPIUsers";
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router";
 
 
 const Login = ({alEnviar}) => {
-	const { login } = useAuth();
+	const { login,token } = useAuth();
 	const navigate = useNavigate();
 
 	//Validaciones de YUP
@@ -26,19 +26,16 @@ const Login = ({alEnviar}) => {
 		validationSchema,
 		onSubmit: async (values, {setSubmitting, resetForm}) => {
 			alEnviar(values);
-
 			try{
 				const res = await PostDataUsers(values);
 
 
 				if(res != null) {
 					login(res);
-					localStorage.setItem("Token",res)
-					navigate("/Back/", {replace: true});
-
-
+					localStorage.setItem("Token",res);
+					navigate('Back/', {replace: true});
 				} else {
-					console.error("El componente login no esta recibiendo el token de la api")
+					console.error("Fallo en el login con el token")
 				}
 			} catch(error) {
 				console.error("Error en el login componente", error);
@@ -49,6 +46,12 @@ const Login = ({alEnviar}) => {
 		}
 
 	});
+
+	useEffect(() => {
+		if(token || localStorage.getItem("Token")) {
+			return navigate('/Back', {replace: true});
+		}
+	},[token, navigate])
 
 
   return (

@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import User from '../backoffice/pages/Users/User'
 import Dashboard from '../backoffice/dashboard'
 
-const RoutesApp = () => {
+const RoutesAppPrivate = () => {
   return (
 	<>
 	<Routes>
@@ -13,4 +13,4 @@ const RoutesApp = () => {
   )
 }
 
-export default RoutesApp
+export default RoutesAppPrivate

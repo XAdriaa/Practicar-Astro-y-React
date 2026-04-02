@@ -11,10 +11,10 @@ import NotFound from './componentes/404'
 import Politic from './pages/Politic/Politic'
 import Cookies  from './pages/Cookies/Cookies'
 import LegalWarning from './pages/LegalWarning/LegalWarning'
-import Login from './backoffice/pages/Login/Login'
-import RoutesApp from './route/RoutesApp'
-import { PostDataUsers } from './server/RequestAPIUsers'
+import RoutesAppPrivate from './route/RoutesAppPrivate'
+import RoutesAppPublic from './route/RoutesAppPublic'
 import PrivateRoute from './route/PrivateRoute'
+import PublicRoute from './route/PublicRoute'
 
 const App = () => {
   return (
@@ -33,10 +33,15 @@ const App = () => {
         <Route path='*' element={<NotFound />}></Route>
 
         /**Ruta de login para trabajadores */
-        <Route path='Admin' element={<Login alEnviar={PostDataUsers}/>}></Route>
+        <Route path='Admin' element={
+          <PublicRoute>
+            <RoutesAppPublic/>
+          </PublicRoute>
+        }>
+        </Route>
         <Route path='Back/*' element={
           <PrivateRoute>
-            <RoutesApp />
+            <RoutesAppPrivate />
           </PrivateRoute>
         }/>
       </Routes>
