@@ -34,7 +34,7 @@ const Login = ({alEnviar}) => {
 				if(res != null) {
 					login(res);
 					localStorage.setItem("Token",res)
-					navigate("/Back", {replace: true});
+					navigate("/Back/", {replace: true});
 
 
 				} else {

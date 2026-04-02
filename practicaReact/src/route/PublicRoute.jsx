@@ -1,5 +1,14 @@
-import { useAuth } from "../context/AuthCOntext";
 
-const PublicRoute () {
-	if(log)
+
+const PublicRoute = () => {
+
+
+
+  return (
+	<>
+
+	</>
+  )
 }
+
+export default PublicRoute
