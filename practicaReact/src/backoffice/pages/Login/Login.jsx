@@ -2,9 +2,14 @@ import React from "react";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { PostDataUsers } from "../../../server/RequestAPIUsers";
-import { useEffect, useState } from "react";
+import { useAuth } from "../../../context/AuthCOntext";
+import { useNavigate } from "react-router";
+
 
 const Login = ({alEnviar}) => {
+	const { login } = useAuth();
+	const navigate = useNavigate();
+
 	//Validaciones de YUP
 	const validationSchema = Yup.object({
 		correo_electronico: Yup.string().required("Obligatory"),
@@ -12,13 +17,32 @@ const Login = ({alEnviar}) => {
 	});
 
 	const formik = useFormik({
+
+
 		initialValues:{
 			correo_electronico:"",
 			password:"",
 		},
 		validationSchema,
-		onSubmit: (values, {setSubmitting, resetForm}) => {
+		onSubmit: async (values, {setSubmitting, resetForm}) => {
 			alEnviar(values);
+
+			try{
+				const res = await PostDataUsers(values);
+
+
+				if(res != null) {
+					login(res);
+					localStorage.setItem("Token",res)
+					navigate("/Back", {replace: true});
+
+
+				} else {
+					console.error("El componente login no esta recibiendo el token de la api")
+				}
+			} catch(error) {
+				console.error("Error en el login componente", error);
+			}
 
 			setSubmitting(false);
 			resetForm();
@@ -26,7 +50,6 @@ const Login = ({alEnviar}) => {
 
 	});
 
-	
 
   return (
 	<div className='container'>

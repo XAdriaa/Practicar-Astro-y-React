@@ -6,10 +6,7 @@ export const PostDataUsers = async (data) => {
 		const res = await axios.post(`${url}/auth/login`, data,{
 		withCredentials:true
 		});
-		console.log("Token recibido de forma correcta", res.data.token);
-		const token = res.data.token;
-		localStorage.setItem('token', token)
-		return res.data
+		return res.data.token
 	}
 
 	catch(error){

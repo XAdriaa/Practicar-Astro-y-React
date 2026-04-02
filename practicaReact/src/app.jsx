@@ -13,6 +13,7 @@ import Cookies  from './pages/Cookies/Cookies'
 import LegalWarning from './pages/LegalWarning/LegalWarning'
 import Login from './backoffice/pages/Login/Login'
 import User from './backoffice/pages/Users/User'
+import Dashboard from './backoffice/dashboard'
 import { PostDataUsers } from './server/RequestAPIUsers'
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route path='Admin' element={<Login alEnviar={PostDataUsers}/>}></Route>
         /**Ruta de usuarios para trabajadores */
         <Route path='Back/User' element={<User/>}></Route>
+        <Route path='Back' element={<Dashboard />}></Route>
       </Routes>
       <Footer />
 
