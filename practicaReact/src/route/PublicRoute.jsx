@@ -2,13 +2,13 @@ import { useAuth } from '../context/AuthCOntext'
 import { Navigate } from 'react-router-dom'
 
 const PublicRoute = ({ children }) => {
+	Login(localStorage.getItem("Token"));
 	const { token } = useAuth();
 
-
-	if(token){
-		return <Navigate to='/Back' />;
+	if(token === null) {
+		return <Navigate to='/Back' replace/>
 	} else {
-		return children;
+		return children
 	}
 }
 

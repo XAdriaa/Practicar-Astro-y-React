@@ -29,11 +29,16 @@ const Login = ({alEnviar}) => {
 			try{
 				const res = await PostDataUsers(values);
 
-
 				if(res != null) {
-					login(res);
 					localStorage.setItem("Token",res);
-					navigate('Back/', {replace: true});
+					if(localStorage.getItem("Token")){
+						console.log("El token se a guardado bien en el localStorage", localStorage.getItem("Token"));
+					} else {
+						console.error("Falla el guardado del token en el localStorage");
+					}
+					login(res);
+					console.log("Token de login guardado correctamente",res);
+					navigate('/Back/', {replace: true});
 				} else {
 					console.error("Fallo en el login con el token")
 				}
@@ -46,12 +51,6 @@ const Login = ({alEnviar}) => {
 		}
 
 	});
-
-	useEffect(() => {
-		if(token || localStorage.getItem("Token")) {
-			return navigate('/Back', {replace: true});
-		}
-	},[token, navigate])
 
 
   return (

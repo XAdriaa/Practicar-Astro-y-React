@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { Analytics } from '@vercel/analytics/react' // 1. Importar el componente
+import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Header from './componentes/header'
 import Footer from './componentes/footer'
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        /**Estas son la sruta de la parte del cliente*/
+        {/* Estas son la ruta de la parte del cliente */}
         <Route path='/' element={<Header />}>
           <Route index element={<Home />}></Route>
           <Route path='contacte' element={<Contact />}></Route>
@@ -30,24 +30,26 @@ const App = () => {
           <Route path='Cookies' element={<Cookies />}></Route>
           <Route path='LegalWarning' element={<LegalWarning />}></Route>
         </Route>
-        <Route path='*' element={<NotFound />}></Route>
 
-        /**Ruta de login para trabajadores */
-        <Route path='Admin' element={
+        {/* Ruta de login para trabajadores */}
+        <Route path='/Admin' element={
           <PublicRoute>
             <RoutesAppPublic/>
           </PublicRoute>
-        }>
-        </Route>
-        <Route path='Back/*' element={
+        }/>
+
+        <Route path='/Back/*' element={
           <PrivateRoute>
             <RoutesAppPrivate />
           </PrivateRoute>
         }/>
+
+        {/* Catch-all al final */}
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Footer />
 
-      {/*Analiticas de vercel */}
+      {/* Analíticas de vercel */}
       <Analytics />
       <SpeedInsights/>
     </div>
