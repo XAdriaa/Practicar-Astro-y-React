@@ -38,3 +38,12 @@ export const FetchFiltreAnimals = async (params) => {
 		console.log("Error al intentar hacer la peticion de la API del filtrado de los animales", error);
 	}
 }
+
+export const FetchUSers = async () => {
+	try{
+		const res = await axios.get(`${url}/usuarios`);
+		return res.data;
+	} catch(error){
+		console.error("Error al intentar conseguir los usuarios de la API")
+	}
+}
