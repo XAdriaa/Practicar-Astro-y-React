@@ -80,11 +80,11 @@ const AdoptFilter = ({ setData }) => {
 
 			{/* BOTÓN SOLO EN MÓVIL */}
 			<button 
-				className="btn btn-light d-md-none w-100 mb-2"
+				className="btn btn-secondary d-md-none w-100 mb-2"
 				data-bs-toggle="collapse"
 				data-bs-target="#filtersCollapse"
 			>
-			Filtros
+			Filtres
 			</button>
 
 			{/* CONTENIDO FILTROS */}
