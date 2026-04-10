@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { PostDataUsers } from "../../../server/RequestAPIUsers";
-import { useAuth } from "../../../context/AuthCOntext";
+import { useAuth } from "../../../context/AuthContext";
 import { useNavigate } from "react-router";
 
 
