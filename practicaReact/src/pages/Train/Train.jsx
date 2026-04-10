@@ -4,8 +4,8 @@ const Train = () => {
   return (
 	<div className='container-fluid'>
 		<div className='row'>
-			<div className='col-12'>
-				<div className='d-flex justify-content-between'>
+			<div className='col-12 position-relative'>
+				<div className='d-flex justify-content-between position-absolute top-30 start-50 translate-middle text-light'>
 					<a href='#'><button className='btn'>Cursos</button></a>
 					<h1>Cursos disponibles</h1>
 					<NavLink to="/contacte">
