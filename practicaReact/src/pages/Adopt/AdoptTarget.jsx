@@ -10,7 +10,7 @@ const AdoptTarget = ({ data }) => {
 
 		<div className="row">
 				{data.map((item) => (
-					<div key={item.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+					<div key={item.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
 						<div className="card card-size">
 							<div className="card-body mb-0 pb-0">
 								<img className="card-img-top object-fit-cover" src={item.img} alt="Imagen no disponible" height="200px"></img>
