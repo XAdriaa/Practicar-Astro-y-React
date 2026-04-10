@@ -63,7 +63,7 @@ Arxiu homeAdopciones.jsx
 	}
 	.boton-adopcion-banner{
 		height: auto;
-		font-size: 12px;
+		font-size: 15px;
 	}
 }
 
@@ -76,7 +76,7 @@ Arxiu homeAdopciones.jsx
 	}
 	.boton-adopcion-banner{
 		height: auto;
-		font-size: 10px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 468px) {
@@ -88,31 +88,31 @@ Arxiu homeAdopciones.jsx
 	}
 	.boton-adopcion-banner{
 		height: auto;
-		font-size: 10px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 430px) {
 	.texto-banner-titulo{
-		font-size: 14px;
+		font-size: 15px;
 	}
 	.texto-banner-subtitulo{
-		font-size: 10px;
+		font-size: 13px;
 	}
 	.boton-adopcion-banner{
 		height: auto;
-		font-size: 6px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 360px) {
 	.texto-banner-titulo{
-		font-size: 14px;
+		font-size: 15px;
 	}
 	.texto-banner-subtitulo{
-		font-size: 10px;
+		font-size: 13px;
 	}
 	.boton-adopcion-banner{
 		height: auto;
-		font-size: 8px;
+		font-size: 15px;
 		margin-top: -30px;
 	}
 }
