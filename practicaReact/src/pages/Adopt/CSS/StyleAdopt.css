@@ -1,7 +1,6 @@
-/*Estilos de la pagina de adoptar*/
-.card-adopt{
-	max-height: 300px;
-	max-width:250px;
+/**Tamaño de las cartas de los perros en adopcion */
+.card-size{
 	width: 100%;
-
+	max-width: 320px;
+	min-height: 400px;
 }

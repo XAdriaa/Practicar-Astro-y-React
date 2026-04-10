@@ -92,7 +92,7 @@ const AdoptFilter = ({ setData }) => {
 				<div className="row">
 
 				<div className="col-12 col-md-auto d-flex flex-column m-2">
-					<label>Sexe:</label>
+					<label className="form-label">Sexe:</label>
 					<select name="sex" value={filtre.sex} onChange={handleFiltre} className="form-select">
 					<option value="">Tots</option>
 					<option value="m">Mascle</option>
@@ -101,7 +101,7 @@ const AdoptFilter = ({ setData }) => {
 				</div>
 
 				<div className="col-12 col-md-auto d-flex flex-column m-2">
-					<label>Raça:</label>
+					<label className="form-label">Raça:</label>
 					<select name="race" value={filtre.race} onChange={handleFiltre} className="form-select">
 					<option value="">Totes</option>
 					{race.map(r => (
@@ -111,7 +111,7 @@ const AdoptFilter = ({ setData }) => {
 				</div>
 
 				<div className="col-12 col-md-auto d-flex flex-column m-2">
-					<label>Edat:</label>
+					<label className="form-label">Edat:</label>
 					<select name="age" value={filtre.age} onChange={handleFiltre} className="form-select">
 					<option value="">Totes</option>
 					<option value="cachorro">Cadell</option>
@@ -122,7 +122,7 @@ const AdoptFilter = ({ setData }) => {
 				</div>
 
 				<div className="col-12 col-md-auto d-flex flex-column m-2">
-					<label>Tamany:</label>
+					<label className="form-label">Tamany:</label>
 					<select name="size" value={filtre.size} onChange={handleFiltre} className="form-select">
 					<option value="">Totes</option>
 					{size.map(s => (
