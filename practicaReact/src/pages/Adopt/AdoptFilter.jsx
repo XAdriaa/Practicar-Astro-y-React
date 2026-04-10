@@ -77,7 +77,7 @@ const AdoptFilter = ({ setData }) => {
     return (
 		<div className="container">
 			<div className="row">
-				<div className="col-12 d-flex">
+				<div className="col-12 d-flex flex-column">
 					<div className="d-flex flex-column m-3">
 						<label>Sexe:</label>
 						<select name="sex" value={filtre.sex} onChange={handleFiltre} className="form-select">

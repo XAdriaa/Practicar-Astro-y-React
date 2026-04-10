@@ -10,12 +10,16 @@ const Adopt = () => {
 const [data, setData] = useState([]);
 
 	return (
-			<div>
-				<div className='bg-primary'>
-					<AdoptarFiltro setData={setData} />
+			<div className='container-fluid'>
+				<div className='row'>
+					<div className='col-12'>
+						<AdoptarFiltro setData={setData} />
+					</div>
 				</div>
-				<div className='container-fluid'>
-					<AdoptTarget data={data} />
+				<div className='row'>
+					<div className='col-12'>
+						<AdoptTarget data={data} />
+					</div>
 				</div>
 			</div>
 	)
